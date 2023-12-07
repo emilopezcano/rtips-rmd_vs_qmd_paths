@@ -1,0 +1,30 @@
+---
+title: "Quarto report - Project path as option in chunk"
+format: html
+---
+
+## Readme
+
+This report is always rendered without errors, as the option in the document is the last one evaluated.
+
+```{r}
+knitr::opts_knit$set(root.dir = "..")
+```
+
+
+## Run script
+
+```{r}
+source("R/my_script.R")
+```
+
+Today is `r formatted_today`.
+
+## Read data
+
+```{r}
+readr::read_csv("data/iris.csv")
+```
+
+
+

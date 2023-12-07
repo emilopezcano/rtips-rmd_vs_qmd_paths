@@ -47,3 +47,13 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Rendering output files
+**.html$
+**_files/
+
+# OS files
+**.DS_Store
+
+
+

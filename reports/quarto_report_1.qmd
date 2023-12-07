@@ -1,0 +1,22 @@
+---
+title: "Quarto report - Relative paths in document"
+format: html
+---
+
+
+## Run script
+
+```{r}
+source("../R/my_script.R")
+```
+
+Today is `r formatted_today`.
+
+## Read data
+
+```{r}
+readr::read_csv("../data/iris.csv")
+```
+
+
+

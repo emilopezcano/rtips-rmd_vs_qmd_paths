@@ -1,0 +1,29 @@
+---
+title: R markdown report - Project path as option in function or RStudio
+---
+
+
+## Readme
+
+This report is only rendered without errors if:
+
+* It is rendered from the editor "Knitr" button, and the option "Evaluate chunks in directory" in RStudio is set to "Project".
+* It is rendered with the `rmarkdown::render()` function with the argument `knit_root_dir = ".."`
+
+
+## Run script
+
+```{r}
+source("R/my_script.R")
+```
+
+Today is `r formatted_today`.
+
+## Read data
+
+```{r}
+readr::read_csv("data/iris.csv")
+```
+
+
+
